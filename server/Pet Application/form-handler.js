@@ -1,4 +1,4 @@
-var TO_ADDRESS = "contact.petconnectadopt@gmail.com"; // where to send form data
+// var TO_ADDRESS = "contact.example@email.net"; // where to send form data
 
 function doPost(e) {
 
