@@ -409,10 +409,18 @@ select {
   text-align: center;
 }
 
-img {
+.petPlaceholder {
   margin: 0 auto;
   text-align: center;
   display: block;
+}
+
+.petSelector {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 256px;
+  height: 256px;
 }
 
 .item1 { grid-area: header; }
