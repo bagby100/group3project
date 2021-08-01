@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="contact form example">
+        <title>Pet Inquiry</title>
+    </head>
+
+    <body>
+        <form class="pure-form pure-form-aligned" method="POST" data-email="petconnectadopt@gmail.com" action="https://script.google.com/macros/s/AKfycbz0OdnRPBDtL7_yjCESvADF-4QjgaG2uUIXVIljsSSrH27z-KrC/exec">
+        <fieldset class="form-elements">
+            <div class="pure-control-group">
+                <label for="id">Pet ID: </label>
+                <input id="id" name="Pet ID" placeholder="Pet ID" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="petName">Pet Name: </label>
+                <input id="petName" name="Pet Name" placeholder="Pet Name" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="firstName">First Name: </label>
+                <input id="firstName" name="First Name" required placeholder="Your First Name" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="lastName">Last Name: </label>
+                <input id="lastName" name="Last Name" required placeholder="Your Last Name" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="email">Email: </label>
+                <input id="email" name="email" type="email" value="" required placeholder="Your Email" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="phoneNumber">Phone Number: </label>
+                <input id="phoneNumber" name="Phone Number" type="number" required placeholder="Your Phone Number" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="address">Address: </label>
+                <input id="address" name="address" placeholder="Your Address" />
+            </div>
+
+            <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+
+        </fieldset>
+        <div style="display:none" class="thankyou_message">
+            <h2>Thanks for inquiring about a pet! An employee will be reaching out to you soon!
+            </h2>
+           </div>
+        </form>
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    </body>
+    </html>
