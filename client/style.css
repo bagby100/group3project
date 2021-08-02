@@ -404,7 +404,7 @@ select {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat2, 100px);
+  grid-template-rows: repeat2, 100px;
   grid-gap: 10px;
   text-align: center;
 }
