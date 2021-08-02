@@ -24,9 +24,13 @@ var petSchema = new mongoose.Schema({
     Location: {
         type: String,
     },
-    Description: {
-        type: String,
+    img:
+    {
+        data: Buffer,
+        contentType: String
     }
+   
+   
  
 });
 
