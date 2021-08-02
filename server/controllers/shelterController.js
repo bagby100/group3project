@@ -24,7 +24,7 @@ function insertRecord(req, res) {
     admin.password = req.body.password;
     admin.save((err, doc) => {
         if (!err)
-            res.redirect('pet/list');
+            res.redirect('pet');
         else {
             if (err.name == 'ValidationError') {
                 handleValidationError(err, req.body);
@@ -47,7 +47,7 @@ function updateRecord(req, res) {
                 handleValidationError(err, req.body);
                 res.render("admin/addOrEdit", {
                     viewTitle: 'Update Admin',
-                    admin: req.body
+                    employee: req.body
                 });
             }
             else
