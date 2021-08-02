@@ -8,8 +8,8 @@ html, body{
 
 }
 .navbar-brand img{
-  width: 25%;
-  height: 25%;
+  width: 30%;
+  height: 30%;
 }
 .navbar{
   padding: .8rem;
@@ -444,6 +444,19 @@ select {
   font-size: 30px;
 }
 
+.container {
+  border-radius: 6px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contact input, .contact select {
+  width: 150px;
+}
+
+.contact textarea {
+  height: 200px;
+}
 
 
 /*
