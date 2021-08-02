@@ -69,15 +69,7 @@
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function() {
           if (xhr.readyState === 4 && xhr.status === 200) {
-            form.reset();
-            var formElements = form.querySelector(".form-elements")
-            if (formElements) {
-              formElements.style.display = "none"; // hide form
-            }
-            var thankYouMessage = form.querySelector(".thankyou_message");
-            if (thankYouMessage) {
-              thankYouMessage.style.display = "block";
-            }
+            window.location.replace("received.html")
           }
       };
       // url encode form data for sending as post data
@@ -89,7 +81,7 @@
     
     function loaded() {
       // bind to the submit event of our form
-      var forms = document.querySelectorAll("form.pure-form.pure-form-aligned");
+      var forms = document.querySelectorAll("form.contact");
       for (var i = 0; i < forms.length; i++) {
         forms[i].addEventListener("submit", handleFormSubmit, false);
       }
