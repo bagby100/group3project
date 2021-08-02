@@ -4,7 +4,7 @@ var petSchema = new mongoose.Schema({
         type: String
     },
     dateArrived: {
-        type: Date,
+        type: String,
     },
     Species: {
         type: String,
@@ -24,9 +24,14 @@ var petSchema = new mongoose.Schema({
     Location: {
         type: String,
     },
-    Description: {
-        type: String,
+    img:
+    {
+        data: Buffer,
+        contentType: String
     }
+   
+   
+ 
 });
 
 mongoose.model('pets', petSchema);
