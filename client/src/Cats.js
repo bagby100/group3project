@@ -19,7 +19,7 @@ function Cats() {
                         <option value="domesticLonghair">Domestic Longhair</option>
                         <option value="maineCoon">Maine Coon</option>
                         <option value="siamese">Siamese</option>
-                        <option value="other">Other Br/eed</option>
+                        <option value="other">Other Breed</option>
                     </select>
                     <br/>
                     <label for="age">Age</label><br/>
@@ -52,7 +52,7 @@ function Cats() {
                         <option value="none" selected disabled hidden>Any</option>
                         <option value="black">Black</option>
                         <option value="white">White</option>
-                        <option value="br/own">Br/own</option>
+                        <option value="brown">Brown</option>
                         <option value="other">Other</option>
                     </select>
                     <br/>
@@ -65,55 +65,55 @@ function Cats() {
                 <div class="item3">
                     <div class="grid">
                         <div class="columns">
-                                <div class="card">
-                                    <h3>Pet name here</h3>
-                                    <img src ="http://placekitten.com/200/300" class="petPlaceholder"/>
-                                    <p>Pet Description/Tags here</p>
-                                </div>
+                            <div class="card">
+                                <h3>Pet name here</h3>
+                                <img src ="http://placekitten.com/200/300" class="petPlaceholder"/>
+                                <p>Pet Description/Tags here</p>
                             </div>
+                        </div>
+                    
+                        <div class="columns">
+                            <div class="card">
+                                <h3>Pet name here</h3>
+                                <img src="http://placekitten.com/200/300" class="petPlaceholder"/>
+                                <p>Pet Description/Tags here</p>
+                            </div>
+                        </div>
                         
-                            <div class="columns">
-                                <div class="card">
-                                    <h3>Pet name here</h3>
-                                    <img src="http://placekitten.com/200/300" class="petPlaceholder"/>
-                                    <p>Pet Description/Tags here</p>
-                                </div>
+                        <div class="columns">
+                            <div class="card">
+                                <h3>Pet name here</h3>
+                                <img src="http://placekitten.com/200/300" class="petPlaceholder"/>
+                                <p>Pet Description/Tags here</p>
                             </div>
-                            
-                            <div class="columns">
-                                <div class="card">
-                                    <h3>Pet name here</h3>
-                                    <img src="http://placekitten.com/200/300" class="petPlaceholder"/>
-                                    <p>Pet Description/Tags here</p>
-                                </div>
+                        </div>
+                    
+                        <div class="columns">
+                            <div class="card">
+                                <h3>Pet name here</h3>
+                                <img src="http://placekitten.com/200/300" class="petPlaceholder"/>
+                                <p>Pet Description/Tags here</p>
                             </div>
+                        </div>
                         
-                            <div class="columns">
-                                <div class="card">
-                                    <h3>Pet name here</h3>
-                                    <img src="http://placekitten.com/200/300" class="petPlaceholder"/>
-                                    <p>Pet Description/Tags here</p>
-                                </div>
+                        <div class="columns">
+                            <div class="card">
+                                <h3>Pet name here</h3>
+                                <img src="http://placekitten.com/200/300" class="petPlaceholder"/>
+                                <p>Pet Description/Tags here</p>
                             </div>
-                            
-                            <div class="columns">
-                                <div class="card">
-                                    <h3>Pet name here</h3>
-                                    <img src="http://placekitten.com/200/300" class="petPlaceholder"/>
-                                    <p>Pet Description/Tags here</p>
-                                </div>
-                            </div>
-                            
-                            <div class="columns">
-                                <div class="card">
-                                    <h3>Pet name here</h3>
-                                    <img src ="http://placekitten.com/200/300" class="petPlaceholder"/>
-                                    <p>Pet Description/Tags here</p>
-                                </div>
+                        </div>
+                        
+                        <div class="columns">
+                            <div class="card">
+                                <h3>Pet name here</h3>
+                                <img src ="http://placekitten.com/200/300" class="petPlaceholder"/>
+                                <p>Pet Description/Tags here</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
            
         </>
     );

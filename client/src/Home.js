@@ -3,12 +3,10 @@ import background from "./img/bg1.jpeg";
 function Home() {
     return (
         <>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></link>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
             <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-            <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css"/>
 
             {/* <!--- Image Slider --> */}
             <div id = "slides" class = "carousel slide" data-ride = "carousel">
@@ -28,7 +26,7 @@ function Home() {
                         </div>
                     </div>
                     <div class = "carousel-item">
-                        <img src = "img/AnimalShelterbackground1.jpeg"/>
+                        <img src = "img/bg2.jpeg"/>
                         <div class = "carousel-caption">
                             <h1 class="display-2">Pet Connect Animal Organization</h1>
                             <h3> Donate or advertise to local animal shelters!</h3>
@@ -37,7 +35,7 @@ function Home() {
                         </div>
                     </div>
                     <div class = "carousel-item">
-                        <img src = "img/AnimalShelterbackground2.jpeg"/>
+                        <img src = "img/bg3.jpeg"/>
                         <div class = "carousel-caption">
                             <h1 class="display-2">Pet Connect Animal Organization</h1>
                             <h3> Learn more about how to take care of pets!</h3>

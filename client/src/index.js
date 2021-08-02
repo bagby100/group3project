@@ -4,6 +4,8 @@ import './index.css';
 import Home from './Home';
 import About from './About';
 import Animals from './Animals'
+import Cats from './Cats';
+import Dogs from './Dogs';
 import Adoption from './Adoption';
 import Donate from './Donate';
 import Petcare from './Petcare';
@@ -32,6 +34,12 @@ ReactDOM.render(
           </Route>
           <Route exact path="/animals">
             <Animals />
+          </Route>
+          <Route exact path="/cats">
+            <Cats />
+          </Route>
+          <Route exact path="/dogs">
+            <Dogs />
           </Route>
           <Route exact path="/adoption">
             <Adoption />
