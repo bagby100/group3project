@@ -43,7 +43,7 @@ function insertRecord(req, res) {
     pet.Weight = req.body.Weight;
     pet.Location = req.body.Location;
     pet.img = {
-        data: fs.readFileSync(path.join('C:/Users/intern/Desktop/Group Project/group3project/CRUD Backend/uploads/' + req.file.filename)),
+        data: fs.readFileSync(path.join('C:/Users/intern/Desktop/Group Project/group3project/server/uploads/' + req.file.filename)),
         contentType: 'image/png'
     }
     pet.save((err, doc) => {
