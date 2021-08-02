@@ -1,0 +1,44 @@
+<h3>{{viewTitle}}</h3>
+<form action="/pet" method="POST" autocomplete="off" enctype="multipart/form-data">
+ <input type="hidden" name="_id" value="{{pet._id}}">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control"name="Name" placeholder="Name"value="{{pet.Name}}"required>
+    </div>
+        <div class="form-group">
+        <label>Arrival Date</label>
+        <input type="date" class="form-control"name="dateArrived" placeholder="Arrival Date"value="{{pet.dateArrived}}"required>
+    </div>
+        <div class="form-group">
+        <label>Species</label>
+        <input type="text" class="form-control"name="Species" placeholder="Species"value="{{pet.Species}}"required>
+    </div>
+        <div class="form-group">
+        <label>Breed</label>
+        <input type="text" class="form-control"name="Breed" placeholder="Breed"value="{{pet.Breed}}"required>
+    </div>
+           <div class="form-group">
+        <label>Weight</label>
+        <input type="number" class="form-control"name="Weight" placeholder="Weight"value="{{pet.Weight}}"required>
+    </div>
+           <div class="form-group">
+        <label>Color</label>
+        <input type="text" class="form-control"name="Color" placeholder="Color"value="{{pet.Color}}"required>
+    </div>
+           <div class="form-group">
+        <label>Sex</label>
+        <input type="text" class="form-control"name="Sex" placeholder="Sex"value="{{pet.Sex}}"required>
+    </div>
+           <div class="form-group">
+        <label>Location</label>
+        <input type="text" class="form-control"name="Location" placeholder="Location"value="{{pet.Location}}"required>
+    </div>
+           <div class="form-group">
+        <label>Description</label>
+        <input type="text" class="form-control"name="img" placeholder="Medical History, Behavior, etc..." value="{{pet.Description}}">
+    </div>
+       <div class="form-group">
+        <button type="submit" class="btn btn-info">Submit</button>
+    </div>
+</form>
+
