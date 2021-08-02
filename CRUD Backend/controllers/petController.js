@@ -2,6 +2,20 @@ const express = require('express');
 var router = express.Router();
 const mongoose = require('mongoose');
 const Pet = mongoose.model('pets')
+var fs = require('fs');
+var path = require('path');
+var multer = require('multer');
+ 
+var storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads')
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.fieldname + '-' + Date.now())
+    }
+});
+ 
+var upload = multer({ storage: storage });
 
 router.get('/', (req, res) => {
     res.render("pet/addOrEdit", {
@@ -10,7 +24,7 @@ router.get('/', (req, res) => {
 });
 
 
-router.post('/', (req, res) => {
+router.post('/', upload.single('img'), (req, res) => {
     if (req.body._id == '')
         insertRecord(req, res);
     else
@@ -28,7 +42,10 @@ function insertRecord(req, res) {
     pet.Sex = req.body.Sex;
     pet.Weight = req.body.Weight;
     pet.Location = req.body.Location;
-    pet.Description = req.body.Description;
+    pet.img = {
+        data: fs.readFileSync(path.join('C:/Users/intern/Desktop/Group Project/group3project/CRUD Backend/uploads/' + req.file.filename)),
+        contentType: 'image/png'
+    }
     pet.save((err, doc) => {
         if (!err)
             res.redirect('pet/list');
@@ -68,6 +85,7 @@ router.get('/list', (req, res) => {
 
 
 router.get('/:id', (req, res) => {
+
     Pet.findById(req.params.id, (err, doc) => {
         if (!err) {
             res.render("pet/addOrEdit", {
@@ -86,6 +104,8 @@ router.get('/delete/:id', (req, res) => {
         else { console.log('Error Deleting Record :' + err); }
     });
 });
+
+
 
 
 module.exports = router;

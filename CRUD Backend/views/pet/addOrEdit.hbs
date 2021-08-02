@@ -1,5 +1,6 @@
 <h3>{{viewTitle}}</h3>
-<form action="/pet" method="POST" autocomplete="off" >
+<form action="/pet" method="POST" autocomplete="off" enctype="multipart/form-data">
+ <input type="hidden" name="_id" value="{{pet._id}}">
     <div class="form-group">
         <label>Name</label>
         <input type="text" class="form-control"name="Name" placeholder="Name"value="{{pet.Name}}"required>
@@ -33,8 +34,8 @@
         <input type="text" class="form-control"name="Location" placeholder="Location"value="{{pet.Location}}"required>
     </div>
            <div class="form-group">
-        <label>Description</label>
-        <input type="text" class="form-control"name="Description" placeholder="Description"value="{{pet.Description}}">
+        <label>Image</label>
+        <input type="file" class="form-control"name="img" placeholder=""value="{{pet.img}}">
     </div>
        <div class="form-group">
         <button type="submit" class="btn btn-info">Submit</button>
