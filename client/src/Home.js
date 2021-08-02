@@ -1,8 +1,14 @@
-import {ShelterBG} from "./assets/img/AnimalShelterbackground0.jpeg";
+import background from "./img/bg1.jpeg";
 
 function Home() {
     return (
         <>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></link>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+            <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css"/>
 
             {/* <!--- Image Slider --> */}
             <div id = "slides" class = "carousel slide" data-ride = "carousel">
@@ -13,7 +19,7 @@ function Home() {
                 </ul>
                 <div class = "carousel-inner">
                     <div class = "carousel-item active">
-                        <img src={ShelterBG}/>
+                        <img src={ background }/>
                         <div class = "carousel-caption">
                             <h1 class="display-2">Pet Connect Animal Organization</h1>
                             <h3> Connect with a pet in need!</h3>

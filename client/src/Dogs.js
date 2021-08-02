@@ -10,8 +10,8 @@ function Dogs() {
                     <h3>Filter your search below!</h3>
 
                     <form action="dogs.html" method="get">
-                    <label for="br/eed">Br/eed:</label><br/>
-                    <select name="br/eed" id="br/eed">
+                    <label for="breed">Breed:</label><br/>
+                    <select name="breed" id="breed">
                         <option value="none" selected disabled hidden>Any</option>
                         <option value="retriever">Retriever</option>
                         <option value="bulldog">Bulldog</option>
