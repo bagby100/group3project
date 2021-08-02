@@ -1,5 +1,5 @@
 <h3>{{viewTitle}}</h3>
-<form action="/admin" method="POST" autocomplete="off">
+<form action="/admin" onsubmit="return validateForm()" method="POST" autocomplete="off">
     <div class="form-group">
         <label>First Name</label>
         <input type="text" class="form-control" name="firstName" placeholder="First Name" value="{{admin.firstName}}"required>
@@ -31,7 +31,7 @@
     </div>
     <div class="form-group">
         <label>Authorization Code</label>
-        <input type="password" class="form-control" name="code" placeholder="Authorization Code" required>
+        <input type="number" class="form-control" name="code" id="auth" placeholder="Authorization Code" required>
     </div>
     <div class="form-group">
         <label>Password</label>
@@ -44,3 +44,12 @@
         <button type="submit" class="btn btn-info">Submit</button>
     </div>
 </form>
+<script>
+function validateForm() {
+  let x = document.getElementById("auth").value;
+  if (x != 678876 ) {
+    alert("Authorization Code Invalid");
+    return false;
+  }
+}
+</script>
